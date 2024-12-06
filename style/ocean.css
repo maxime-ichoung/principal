@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(to top, black, blue); /* Gradient background */
+    height: 300vh;
+}
+.slide {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.slide-1 {
+    background-color: #6ccff9;
+    position: relative;
+}
+
+.slide-2 {
+    /*background-color: rgb(28, 171, 235);*/
+    position: relative;
+}
+
+.slide-3 {
+    /*background-color: #ffc107;*/
+    /*background-color: rgba(255, 193, 7, 0.8);*/
+}
+
+.slides-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides-container > .slide {
+    scroll-snap-align: start;
+}
+
+.svg-container {
+    position: absolute; /* Permet de positionner par rapport au parent */
+    bottom: 0; /* Place l'élément en bas */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Ajuste le centrage */
+    width: 100%; /* Facultatif : Ajustez la taille au besoin */
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Océan et Corps Humain</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-container">
+  <video autoplay muted loop id="background-video">
+    <source src="video/ocean.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+  <div class="content">
+    <h1>Explorez les parallèles entre l'Océan et le Corps Humain</h1>
+    <button id="start-button">Commencer</button>
+  </div>
+</div>
+
+<div class="wave-transition">
+  <div class="wave"></div>
+</div>
+
+<script>
+  const button = document.getElementById('start-button');
+  const waveTransition = document.querySelector('.wave-transition');
+
+  function createBubble() {
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+
+    // Taille aléatoire
+    const size = Math.random() * 20 + 10 + 'px';
+    bubble.style.width = size;
+    bubble.style.height = size;
+
+    // Position horizontale aléatoire
+    bubble.style.left = Math.random() * 100 + 'vw';
+
+    // Ajout de la bulle à la vague
+    waveTransition.appendChild(bubble);
+
+    // Suppression de la bulle après l'animation
+    bubble.addEventListener('animationend', () => bubble.remove());
+  }
+
+  button.addEventListener('click', () => {
+    // Afficher la vague
+    waveTransition.classList.add('active');
+
+    // Ajouter des bulles
+    for (let i = 0; i < 30; i++) {
+      setTimeout(createBubble, i * 150);
+    }
+
+    // Rediriger vers la nouvelle page après l'animation
+    setTimeout(() => {
+      window.location.href = "ocean.html";
+    }, 3000); // Durée de l'animation
+  });
+</script>
+</body>
+</html>
