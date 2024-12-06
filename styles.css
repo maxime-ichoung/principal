@@ -30,6 +30,40 @@ body {
     text-shadow: 0 0 10px black;
 }
 
+.bottom-content {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#qrcode-button {
+    padding: 7.5px 15px;
+    font-size: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#qrcode-button:hover {
+    background-color: #004494;
+}
+
+#popup-qrcode {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
 #start-button {
     padding: 15px 30px;
     font-size: 18px;
