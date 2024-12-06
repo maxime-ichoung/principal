@@ -170,3 +170,107 @@ body {
     }
 }
 
+/* --------------------------------- */
+.image {
+    position: absolute;
+    cursor: pointer;
+}
+
+#logo {
+    max-height: 100px;
+
+    position: absolute;
+    top: 50px;  /* Ajustez cette valeur pour rapprocher le logo */
+    left: 800px;
+}
+
+#whale {
+    width: 1000px;
+    z-index: -1;
+    display: none;
+}
+
+#shark {
+    width: 500px;
+    z-index: 1;
+    display: none;
+}
+
+#shark1 {
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+#shark2 {
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+#shark3 {
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+#shark4 {
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+#shark5 {
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+#shark6 {
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+
+.shark {
+    transition: left 2s ease-in-out, top 2s ease-in-out;
+    position: absolute;
+    display: block;
+}
+
+
+.rotate {
+    animation: rotateLogo 4s linear infinite;
+}
+
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.dialog {
+    display: none; /* La bulle est cachée par défaut */
+    position: fixed;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Contenu de la bulle */
+.dialog-content {
+    position: relative;
+}
