@@ -1,35 +1,153 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/ocean.css">
-    <link rel="icon" type="image/png" href="assets/Logo.png">
+    <style>
+        .slide-1 .slide-text {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .slide-1 .slide-subtext {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .slide-1 .bullet-points {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 20px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .slide-1 .bullet-points li {
+            margin: 10px 0;
+        }
+
+        .svg-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="container-fluid">
-            <!-- Slides Container -->
-        <div class="slides-container" onscroll="updateBackgroundGradient(event)">
-            <div class="slide slide-1">Slide 1
-                <div class="svg-container">
-                    <!-- Premier SVG -->
-                    <svg width="100%" height="100%" viewBox="0 0 59059 14767" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+<div class="container-fluid">
+    <!-- Slides Container -->
+    <div class="slides-container" onscroll="updateBackgroundGradient(event)">
+        <div class="slide slide-1">
+            <div class="slide-text">
+                Prenez soin de votre corps, prenez soin de notre océan
+            </div>
+            <div class="slide-subtext">
+                Le corps humain et l’océan partagent de nombreuses similarités dans leur fonctionnement et leurs dysfonctionnements.<br>
+                Tout comme notre corps, l’océan régule des processus vitaux pour l’équilibre de la planète.<br>
+                À travers cette exploration, découvrez comment chaque partie de notre corps trouve un écho dans les mécanismes océaniques.<br>
+                Nous vous invitons ici à scroller dans les profondeurs de l’océan pour en découvrir plus :
+            </div>
+            <ul class="bullet-points">
+                <li>Sans lui pas de vie</li>
+                <div>
+                    Eau et ocean
+                    L’eau est nécessaire à la vie. Sans eau, notre écosystème ne pourrait pas survivre. La Terre est composée à 71 % d’eau, mais seulement 3 % de cette eau est douce et accessible pour les besoins des êtres vivants. Les océans, qui représentent la majorité de cette ressource, jouent un rôle clé dans la régulation du climat et le cycle de l’eau. Ils abritent une biodiversité essentielle et influencent directement la santé des écosystèmes terrestres et marins. Préserver cette ressource vitale est crucial pour garantir l’équilibre de notre planète. </div>
+                <div> Cerveau
+                    Tout comme l’eau est essentielle à la vie, le cerveau est le centre vital de notre existence. Les océans, régulateurs du climat, se comparent au rôle du cerveau dans la régulation des fonctions corporelles. L’océan, vaste et complexe, ressemble aux méandres du cerveau humain, qui abrite une diversité de connexions, tout comme l’océan regorge de biodiversité. De même que les océans influencent l’ensemble de la planète, le cerveau contrôle chaque aspect de notre corps. Préserver l’équilibre de ces deux systèmes est indispensable pour le maintien de la vie.</div>
+                <li>Protections des agressions externe</li>
+                <div>
+                    Surface de l’eau
+
+                    La surface de l’eau agit comme une barrière protectrice contre les agressions extérieures. Grâce à la tension superficielle, elle limite l’entrée de particules nuisibles et joue un rôle crucial dans la régulation des échanges entre l’atmosphère et les profondeurs. Les couches supérieures des océans absorbent les rayons UV, protégeant ainsi les écosystèmes marins des effets nocifs du soleil. De plus, elles amortissent les impacts extérieurs, tels que les vents violents ou les pollutions, agissant comme une première ligne de défense pour préserver la stabilité des écosystèmes aquatiques.
+                </div>
+                <div>
+                    Peau
+
+                    La peau, de manière similaire, protège le corps humain des agressions externes. Barrière physique et chimique, elle empêche l’entrée de microbes, de polluants, et des rayons UV grâce à la mélanine. Sa couche cornée forme une protection contre les frottements et les blessures superficielles, tandis que ses glandes sébacées sécrètent des substances qui empêchent le dessèchement et limitent la prolifération bactérienne. Tout comme la surface de l’eau, la peau est une frontière dynamique, en constante adaptation pour maintenir l’équilibre et protéger les structures sous-jacentes.
+                </div>
+                <li>Néfaste pour la vie & bien-être des écosystèmes</li>
+                <div>
+                    Déchets plastique exemple le 7e continent
+
+                    Le 7e continent de déchets plastiques, une vaste accumulation de plastique flottant dans les océans, représente une menace considérable pour les écosystèmes marins. Ces déchets nuisent à la vie marine en étouffant les coraux, en piégeant les animaux marins et en polluant les habitats naturels. Les plastiques se fragmentent en microplastiques, que les poissons et autres organismes marins ingèrent, perturbant leur digestion, leur reproduction, et, finalement, leur survie. En se décomposant lentement, ces plastiques libèrent également des substances chimiques toxiques, affectant la chaîne alimentaire et la biodiversité, ce qui nuit gravement à l’équilibre des océans.
+                </div>
+                <div>
+                    # Microplastique dans le corp humain
+
+                    De manière similaire, les microplastiques présents dans notre environnement finissent par pénétrer dans le corps humain, principalement via l’alimentation et l’eau. Ces minuscules particules, une fois ingérées, peuvent s’accumuler dans les tissus et engendrer des inflammations, des déséquilibres hormonaux, voire des troubles neurologiques. À l’instar des déchets plastiques dans les océans, les microplastiques dans le corps humain perturbent la santé en libérant des substances chimiques nocives qui interfèrent avec le bon fonctionnement des organes et perturbent les processus biologiques. Cette pollution invisible devient une menace grandissante pour la santé humaine, tout comme elle le fait pour les écosystèmes marins.
+                </div>
+            </ul>
+            <div class="svg-container">
+                <!-- Premier SVG -->
+                <svg width="100%" height="100%" viewBox="0 0 59059 14767" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                         <path id="vague" d="M-2.379,5303.04c-0,-0 3193.28,1696.55 5938.54,3155.08c2429.68,1290.86 5341.25,1293.22 7773.04,6.288c686.575,-363.346 1401.28,-741.584 2087.39,-1104.68c2422.32,-1281.93 5321.42,-1284.86 7746.33,-7.837c702.188,369.787 1434.33,755.354 2135.77,1124.75c2410.65,1269.51 5290.96,1274.51 7706,13.363c699.062,-365.055 1428.23,-745.83 2127.34,-1110.91c2416.03,-1261.66 5297.62,-1256.12 7708.79,14.829c684.663,360.892 1398.16,736.984 2083.7,1098.34c2428.8,1280.25 5333.67,1275.96 7758.71,-11.45c2761.54,-1466.07 5986.12,-3177.98 5986.12,-3177.98l0,9463.62l-59068.8,-0l17.009,-9463.46l-0,0.034Z" style="fill:rgb(93,200,246);stroke:#fff;stroke-width:4.17px;"/>
                     </svg>
-
-                </div>
             </div>
-            <div class="slide slide-2">Slide 2</div>
-            <div class="slide slide-3">Slide 3</div>
-            <div class="slide slide-4">Slide 4</div>
-            <div class="slide slide-5">Slide 5</div>
+        </div>
+
+        <div class="slide slide-2">
+            <ul class="bullet-points">
+                <li>Adaptations face a son environnement</li>
+                <div>
+                    L’adaptation du corp
+                    Le corps humain possède une remarquable capacité d'adaptation face aux changements de son environnement. Que ce soit face à des conditions de froid extrême, de chaleur intense, ou d'altitude élevée, notre corps met en place des mécanismes de régulation. Par exemple, en cas de froid, les vaisseaux sanguins se contractent pour conserver la chaleur, tandis qu'en chaleur, la transpiration aide à réguler la température corporelle. Ces ajustements physiologiques permettent au corps de maintenir son équilibre interne, ou homéostasie, et de fonctionner efficacement malgré les variations externes. Ainsi, le corps humain démontre une flexibilité qui lui permet de s'adapter à une grande variété de conditions environnementales.
+                </div>
+                <li>Rythme essentielle au maintiens de la vie</li>
+                <div>
+                    L’adaptation des especes
+                    De même que le corps humain, les espèces animales et végétales se sont adaptées au fil du temps aux conditions de leur habitat. Ce processus, appelé évolution, repose sur des mutations génétiques favorables qui permettent à certaines caractéristiques de se transmettre à la descendance. Par exemple, des animaux vivant dans des déserts ont développé des mécanismes pour retenir l'eau, comme les camélidés qui stockent de la graisse dans leurs bosses pour éviter la déshydratation. De la même manière, certaines plantes ont évolué pour survivre avec peu d'eau ou dans des sols pauvres. Ces adaptations spécifiques permettent à chaque espèce de mieux survivre et se reproduire dans son environnement, assurant ainsi la continuité de l'espèce dans des conditions parfois extrêmes.
+                </div>
+                <div>
+                    L’adaptation des especes
+                    De même que le corps humain, les espèces animales et végétales se sont adaptées au fil du temps aux conditions de leur habitat. Ce processus, appelé évolution, repose sur des mutations génétiques favorables qui permettent à certaines caractéristiques de se transmettre à la descendance. Par exemple, des animaux vivant dans des déserts ont développé des mécanismes pour retenir l'eau, comme les camélidés qui stockent de la graisse dans leurs bosses pour éviter la déshydratation. De la même manière, certaines plantes ont évolué pour survivre avec peu d'eau ou dans des sols pauvres. Ces adaptations spécifiques permettent à chaque espèce de mieux survivre et se reproduire dans son environnement, assurant ainsi la continuité de l'espèce dans des conditions parfois extrêmes.
+                </div>
+                <li>Le flux Vital</li>
+                <div>
+                    L’adaptation du corp
+                    Le cœur et le système circulatoire jouent un rôle fondamental dans le maintien de la vie en assurant la circulation du sang dans tout le corps. Le cœur agit comme une pompe, créant un rythme constant qui permet de transporter l'oxygène, les nutriments et les hormones vers les cellules tout en éliminant les déchets. Ce rythme cardiaque, régulé par des impulsions électriques, est essentiel pour garantir que chaque organe et tissu reçoive ce dont il a besoin pour fonctionner correctement. De même, le système circulatoire aide à maintenir l'homéostasie en ajustant la circulation sanguine en fonction des besoins du corps, par exemple en augmentant le flux sanguin vers les muscles pendant l'exercice ou en réduisant le flux lors de périodes de repos.
+                </div>
+                <div>
+                    L’adaptation des especes
+                    De manière parallèle, les courants marins, notamment la pompe thermohaline, jouent un rôle tout aussi essentiel dans la régulation des échanges thermiques et chimiques dans les océans. Cette circulation océanique est alimentée par les différences de température et de salinité entre les eaux de surface et les eaux profondes. Le mouvement des masses d'eau, à la fois horizontal et vertical, permet de distribuer les nutriments et d'équilibrer les températures, tout comme le système circulatoire distribue l'oxygène et les nutriments dans le corps humain. La pompe thermohaline joue un rôle crucial dans la régulation du climat global, tout comme un système circulatoire équilibré est vital pour maintenir la santé et la température du corps.
+                </div>
+            </ul>
+        </div>
+        <div class="slide slide-3">
+            <ul class="bullet-points">
+                <li>Limites de l’adaptations</li>
+                <li>Flux thermique</li>
+                <li>Désequilibres</li>
+                <li>Echange gazeux</li>
+            </ul>
+        </div>
+        <div class="slide slide-4">
+            <ul class="bullet-points">
+                <li>Les Barrières Protectrices : Mucus et Défenses Naturelles</li>
+                <li>Signaux électriques</li>
+                <li>Sans elles tous tombe</li>
+            </ul>
+        </div>
+        <div class="slide slide-5">
+            <ul class="bullet-points">
+                <li>Défense et Équilibre</li>
+                <li>Régénération  et reconstructions</li>
+                <li>Gestion de la pression</li>
+                <li>Archives Vivantes</li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script/ocean.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/ocean.js"></script>
 </body>
 </html>

@@ -15,17 +15,40 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    flex-direction: column;
     color: white;
 }
 
 .slide-1 {
     background-color: #6ccff9;
     position: relative;
+    font-size: 2rem;
+    padding-top: 0px;
+}
+
+.slide-1 .slide-text {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.slide-1 .slide-subtext {
+    font-size: 1.5rem;
+    color: white;
+    max-width: 90%;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.bullet-points div {
+    font-size: 1rem;
 }
 
 .slide-2 {
     /*background-color: rgb(28, 171, 235);*/
     position: relative;
+    font-size: 2rem;
+    padding-top: 0px;
 }
 
 .slide-3 {
@@ -57,4 +80,24 @@ body {
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
+}
+
+.slide-1 .bullet-points li,
+.slide-2 .bullet-points li,
+.slide-3 .bullet-points li,
+.slide-4 .bullet-points li,
+.slide-5 .bullet-points li{
+    font-size: 2rem; /* Taille de police des bullet-points */
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.slide-1 .bullet-points li,
+.slide-2 .bullet-points li
+.slide-3 .bullet-points li,
+.slide-4 .bullet-points li,
+.slide-5 .bullet-points li{
+    margin: 20px 0;
 }
