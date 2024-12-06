@@ -10,8 +10,8 @@ buttonQRcode.addEventListener('click', () => {
     } else {
         const img = document.createElement("img");
         img.src = srcLink;
-        img.width = 200;
-        img.height = 200;
+        img.width = 400;
+        img.height = 400;
         popupQRcode.appendChild(img);
     }
   });
